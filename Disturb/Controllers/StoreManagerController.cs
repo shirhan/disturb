@@ -17,8 +17,7 @@ namespace Disturb.Controllers
         private DisturbEntities db = new DisturbEntities();
 
         //
-        // GET: /StoreManager/
-
+        // GET: /StoreManager/ 
         public ViewResult Index()
         {
             var products = db.Products.Include(p => p.Category).Include(p => p.Brand);
