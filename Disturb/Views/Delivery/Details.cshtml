@@ -1,0 +1,25 @@
+﻿@model Disturb.Models.Delivery
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Delivery</legend>
+
+    <div class="display-label">DeliviryDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DeliviryDate)
+    </div>
+
+    <div class="display-label">Provider</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Provider)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.DeliveryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

@@ -1,0 +1,28 @@
+﻿@model Disturb.Models.Delivery
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Delivery</legend>
+
+    <div class="display-label">DeliviryDate</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.DeliviryDate)
+    </div>
+
+    <div class="display-label">Provider</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Provider)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

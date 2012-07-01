@@ -1,0 +1,18 @@
+﻿@model List<Disturb.Models.Product>
+@{
+    ViewBag.Title = "Disturb Shop";
+}
+<div id="promotion"> </div>
+<h3><em>Fresh</em> off the grill</h3>
+<ul id="product-list">
+    @foreach (var product in Model)
+    {
+        <li>
+            <a href="@Url.Action("Details", "Store",
+                new { id = product.Code })">
+                <img alt="@product.Description" src="@product.PicUrl" />
+                <span>@product.Description</span>
+            </a>
+        </li>
+    }
+</ul>

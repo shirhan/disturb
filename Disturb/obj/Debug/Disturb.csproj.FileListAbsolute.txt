@@ -1,0 +1,6 @@
+D:\KoceProg\Disturb\Disturb\bin\Disturb.dll
+D:\KoceProg\Disturb\Disturb\bin\Disturb.pdb
+D:\KoceProg\Disturb\Disturb\bin\EntityFramework.dll
+D:\KoceProg\Disturb\Disturb\bin\EntityFramework.xml
+D:\KoceProg\Disturb\Disturb\obj\Debug\Disturb.dll
+D:\KoceProg\Disturb\Disturb\obj\Debug\Disturb.pdb
